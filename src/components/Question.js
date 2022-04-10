@@ -8,7 +8,6 @@ function Question({ question, onAnswered }) {
     let timeoutID = setTimeout(() => setTimeRemaining(timeRemaining - 1), 1000)
 
     if(timeRemaining === 0) {
-      // clearTimeout(timeoutID)
       setTimeRemaining(10)
       onAnswered(false)
     }
